@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Document</title>
+</head>
+<body>
+  <h1>Test</h1>
+  <p class="test">outline: offset 10px. Border is solid and outline is dashed</p>
+
+  <div class="box"></div>
+</body>
+
+<style>
+  p .test {
+  outline: dashed thin;
+  /* Mueve el contorno 10px lejos del borde */
+  outline-offset: 10px;
+  border: 10px solid black;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: green;
+  /* border: 10px solid red; */
+  outline-offset: 1px solid violet;
+}
+</style>
+</html>
